@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="appearance">
+      appearance
+  </button>
+  <button id="disappear">
+    disappear
+  </button>
+  <p id="modal">gega axalaia</p>
+    <script>
+//9
+    function createParagraph(name) {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = name;
+    document.body.appendChild(paragraph);
+  }
+     createParagraph("gega axalaia");
+//10
+      const appearance = document.getElementById('appearance')
+      const disappear = document.getElementById('disappear')
+      appearance.addEventListener('click', function(){
+          console.log('click');
+          const modal = document.getElementById('modal')
+          modal.style.display = 'block'
+      })
+      disappear.addEventListener('click', function(){
+          const modal = document.getElementById("modal")
+          modal.style.display = 'none'
+      })
+    </script> 
+</body>
+</html>
