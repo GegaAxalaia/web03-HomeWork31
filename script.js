@@ -17,7 +17,7 @@ function sumArray(numbers) {
   const result2 = squareNumber(inputNumber);
   console.log(result2);
   // 5
-  function compareNumbers(a, b) {
+  function Numbers(a, b) {
     if (a > b) {
       return 1;
     } else if (a < b) {
@@ -26,9 +26,9 @@ function sumArray(numbers) {
       return 0;
     }
   }
-  console.log(compareNumbers(5, 10)); 
-  console.log(compareNumbers(15, 5)); 
-  console.log(compareNumbers(7, 7));
+  console.log(Numbers(5, 10)); 
+  console.log(Numbers(15, 5)); 
+  console.log(Numbers(7, 7));
   // 6
   function checkTextLength(text) {
     if (text.length < 6) {
